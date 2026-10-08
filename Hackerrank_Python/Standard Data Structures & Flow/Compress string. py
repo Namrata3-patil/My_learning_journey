@@ -5,3 +5,16 @@ s = input()
 for key, group in groupby(s):
     count = len(list(group))
     print((count, int(key)), end=" ")
+'''
+Sample Input
+
+1222311
+Sample Output
+
+(1, 1) (3, 2) (1, 3) (2, 1)
+Explanation
+
+First, the character  occurs only once. It is replaced by . Then the character  occurs three times, and it is replaced by  and so on.
+
+Also, note the single space within each compression and between the compressions.
+'''
